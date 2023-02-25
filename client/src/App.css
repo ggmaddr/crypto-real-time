@@ -37,7 +37,7 @@
   --white_50: hsla(0, 0%, 100%, 0.5);
   --white_30: hsla(0, 0%, 100%, 0.3);
   --white_10: hsla(0, 0%, 100%, 0.1);
-  --black_10: hsla(0, 0%, 0%, 0.1);
+  --black_10: hsla(0, 89%, 45%, 0.1);
   --white: hsl(0, 0%, 100%);
 
   /**
@@ -149,10 +149,12 @@ html {
 }
 
 body {
-  background-color: var(--eerie-black-2);
-  color: var(--cadet-blue-crayola);
+
+  background: linear-gradient(0deg, rgba(0,42,176,1) 52%, rgba(76,125,211,1) 60%, rgba(173,231,255,1) 73%, rgba(187,138,255,1) 87%, rgba(255,128,184,1) 99%);  
+  color: rgb(255, 255, 255);
   font-size: 1.6rem;
   line-height: 1.4;
+
 }
 
 body.active { overflow: hidden; }
@@ -410,10 +412,15 @@ body.active { overflow: hidden; }
 .hero-content { margin-block-end: 80px; }
 
 .hero-text {
-  font-size: var(--fs-5);
+  font-size: 2.3rem;
+  font-weight: bolder;
   margin-block: 25px 40px;
 }
-
+.hero-title
+{
+  color: #6000bf;
+  text-shadow: -5px 10px 10px #f9f7ff;
+}
 
 
 

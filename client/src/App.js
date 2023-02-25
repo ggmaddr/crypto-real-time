@@ -8,8 +8,8 @@ function App() {
         <div className="container">
 
           <a href="https://www.google.com/" className="logo">
-            <img src="images/logo.svg" width="32" height="32" alt="Crypto logo"/>
-            Cryptex
+            <img src="/images/logo.png" width="70" height="70" alt="Crypto logo"/>
+            GrypTa
           </a>
 
           <nav className="navbar" data-navbar>
@@ -44,8 +44,6 @@ function App() {
 
 
 
-
-
   <main>
     <article>
 
@@ -54,10 +52,10 @@ function App() {
 
           <div className="hero-content">
 
-            <h1 className="h1 hero-title">Buy & Sell Digital Assets In The Cryptex</h1>
+            <h1 className="h1 hero-title">Grady's Crypto Wallet</h1>
 
             <p className="hero-text">
-              Coin Cryptex is the easiest, safest, and fastest way to buy & sell crypto asset exchange.
+              Boss Grady's crypto wallet and his real-time value.
             </p>
 
             <a href="https://www.google.com/" className="btn btn-primary">Get started now</a>
@@ -65,7 +63,7 @@ function App() {
           </div>
 
           <figure className="hero-banner">
-            <img src="images/hero-banner.png" style={{width: "570", height: "448"}} alt="hero banner" className="w-100"/>
+            <img src={require("./images/hero-banner.png")} style={{width: "570", height: "448"}} alt="hero banner" className="w-100"/>
           </figure>
 
         </div>
