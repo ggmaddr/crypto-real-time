@@ -7,7 +7,7 @@ function App() {
       <header className="header" data-header>
         <div className="container">
 
-          <a href="https://www.google.com/" className="logo">
+          <a href="!#" className="logo">
             <img src="/images/logo.png" width="70" height="70" alt="Crypto logo"/>
             GrypTa
           </a>
@@ -16,15 +16,15 @@ function App() {
             <ul className="navbar-list">
 
               <li className="navbar-item">
-                <a href="https://www.google.com/" className="navbar-link active" data-nav-link>Homepage</a>
+                <a href="!#" className="navbar-link active" data-nav-link>Homepage</a>
               </li>
 
               <li className="navbar-item">
-                <a href="https://www.google.com/" className="navbar-link" data-nav-link>Buy Crypto</a>
+                <a href="!#" className="navbar-link" data-nav-link>Buy Crypto</a>
               </li>
 
               <li className="navbar-item">
-                <a href="https://www.google.com/" className="navbar-link" data-nav-link>Markets</a>
+                <a href="!#" className="navbar-link" data-nav-link>Markets</a>
               </li>
 
             </ul>
@@ -37,7 +37,7 @@ function App() {
             <span className="line line-3"></span>
           </button>
 
-          <a href="https://www.google.com/" className="btn btn-outline">Wallet</a>
+          <a href="!#" className="btn btn-outline">Wallet</a>
 
         </div>
       </header>
@@ -58,7 +58,7 @@ function App() {
               Boss Grady's crypto wallet and his real-time value.
             </p>
 
-            <a href="https://www.google.com/" className="btn btn-primary">Get started now</a>
+            <a href="!#" className="btn btn-primary">Get started now</a>
 
           </div>
 
@@ -123,7 +123,7 @@ function App() {
                   <div className="card-title-wrapper">
                     <img src="./images/coin-1.svg" width="24" height="24" alt="bitcoin logo"/>
 
-                    <a href="https://www.google.com/" className="card-title">
+                    <a href="!#" className="card-title">
                       Bitcoin <span className="span">BTC/USD</span>
                     </a>
                   </div>
@@ -145,7 +145,7 @@ function App() {
                   <div className="card-title-wrapper">
                     <img src="./images/coin-2.svg" width="24" height="24" alt="ethereum logo"/>
 
-                    <a href="https://www.google.com/" className="card-title">
+                    <a href="!#" className="card-title">
                       Ethereum <span className="span">ETH/USD</span>
                     </a>
                   </div>
@@ -167,7 +167,7 @@ function App() {
                   <div className="card-title-wrapper">
                     <img src="./images/coin-3.svg" width="24" height="24" alt="tether logo"/>
 
-                    <a href="https://www.google.com/" className="card-title">
+                    <a href="!#" className="card-title">
                       Tether <span className="span">USDT/USD</span>
                     </a>
                   </div>
@@ -189,7 +189,7 @@ function App() {
                   <div className="card-title-wrapper">
                     <img src="./images/coin-4.svg" width="24" height="24" alt="bnb logo"/>
 
-                    <a href="https://www.google.com/" className="card-title">
+                    <a href="!#" className="card-title">
                       BNB <span className="span">BNB/USD</span>
                     </a>
                   </div>
@@ -219,7 +219,7 @@ function App() {
           <div className="title-wrapper">
             <h2 className="h2 section-title">Market Update</h2>
 
-            <a href="https://www.google.com/" className="btn-link">See All Coins</a>
+            <a href="!#" className="btn-link">See All Coins</a>
           </div>
 
           <div className="market-tab">
@@ -300,7 +300,7 @@ function App() {
                       <img src="./images/coin-1.svg" width="20" height="20" alt="Bitcoin logo" className="img"/>
 
                       <h3>
-                        <a href="https://www.google.com/" className="coin-name">Bitcoin <span className="span">BTC</span></a>
+                        <a href="!#" className="coin-name">Bitcoin <span className="span">BTC</span></a>
                       </h3>
                     </div>
                   </td>
@@ -337,7 +337,7 @@ function App() {
                       <img src="./images/coin-2.svg" width="20" height="20" alt="Ethereum logo" className="img"/>
 
                       <h3>
-                        <a href="https://www.google.com/" className="coin-name">Ethereum <span className="span">ETH</span></a>
+                        <a href="!#" className="coin-name">Ethereum <span className="span">ETH</span></a>
                       </h3>
                     </div>
                   </td>
@@ -374,7 +374,7 @@ function App() {
                       <img src="./images/coin-3.svg" width="20" height="20" alt="Tether logo" className="img"/>
 
                       <h3>
-                        <a href="https://www.google.com/" className="coin-name">Tether <span className="span">USDT/USD</span></a>
+                        <a href="!#" className="coin-name">Tether <span className="span">USDT/USD</span></a>
                       </h3>
                     </div>
                   </td>
@@ -411,7 +411,7 @@ function App() {
                       <img src="./images/coin-4.svg" width="20" height="20" alt="BNB logo" className="img"/>
 
                       <h3>
-                        <a href="https://www.google.com/" className="coin-name">BNB <span className="span">BNB/USD</span></a>
+                        <a href="!#" className="coin-name">BNB <span className="span">BNB/USD</span></a>
                       </h3>
                     </div>
                   </td>
@@ -448,7 +448,7 @@ function App() {
                       <img src="./images/coin-5.svg" width="20" height="20" alt="Solana logo" className="img"/>
 
                       <h3>
-                        <a href="https://www.google.com/" className="coin-name">Solana <span className="span">SOL</span></a>
+                        <a href="!#" className="coin-name">Solana <span className="span">SOL</span></a>
                       </h3>
                     </div>
                   </td>
@@ -485,7 +485,7 @@ function App() {
                       <img src="./images/coin-6.svg" width="20" height="20" alt="XRP logo" className="img"/>
 
                       <h3>
-                        <a href="https://www.google.com/" className="coin-name">XRP <span className="span">XRP</span></a>
+                        <a href="!#" className="coin-name">XRP <span className="span">XRP</span></a>
                       </h3>
                     </div>
                   </td>
@@ -522,7 +522,7 @@ function App() {
                       <img src="./images/coin-7.svg" width="20" height="20" alt="Cardano logo" className="img"/>
 
                       <h3>
-                        <a href="https://www.google.com/" className="coin-name">Cardano <span className="span">ADA</span></a>
+                        <a href="!#" className="coin-name">Cardano <span className="span">ADA</span></a>
                       </h3>
                     </div>
                   </td>
@@ -559,7 +559,7 @@ function App() {
                       <img src="./images/coin-8.svg" width="20" height="20" alt="Avalanche logo" className="img"/>
 
                       <h3>
-                        <a href="https://www.google.com/" className="coin-name">Avalanche <span className="span">AVAX</span></a>
+                        <a href="!#" className="coin-name">Avalanche <span className="span">AVAX</span></a>
                       </h3>
                     </div>
                   </td>
@@ -693,7 +693,7 @@ function App() {
 
           <div className="about-content">
 
-            <h2 className="h2 section-title">What Is Cryptex</h2>
+            <h2 className="h2 section-title">What Is GrypTa</h2>
 
             <p className="section-text">
               Experience a variety of trading on Bitcost. You can use various types of coin transactions such as Spot
@@ -733,7 +733,7 @@ function App() {
 
             </ul>
 
-            <a href="https://www.google.com/" className="btn btn-primary">Explore More</a>
+            <a href="!#" className="btn btn-primary">Explore More</a>
 
           </div>
 
@@ -781,12 +781,12 @@ function App() {
             </ul>
 
             <div className="app-wrapper">
-              <a href="https://www.google.com/">
+              <a href="!#">
                 <img src="./images/googleplay.png" width="135" height="40" loading="lazy"
                   alt="get it on google play"/>
               </a>
 
-              <a href="https://www.google.com/">
+              <a href="!#">
                 <img src="./images/appstore.png" width="120" height="40" loading="lazy"
                   alt="download on the app store"/>
               </a>
@@ -815,8 +815,8 @@ function App() {
 
         <div className="footer-brand">
 
-          <a href="https://www.google.com/" className="logo">
-            <img src="./images/logo.svg" width="50" height="50" alt="Cryptex logo"/>
+          <a href="!#" className="logo">
+            <img src="./images/logo.png" width="70" height="70" alt="Cryptex logo"/>
             Cryptex
           </a>
 
@@ -839,27 +839,27 @@ function App() {
           </li>
 
           <li>
-            <a href="https://www.google.com/" className="footer-link">Spot</a>
+            <a href="!#" className="footer-link">Spot</a>
           </li>
 
           <li>
-            <a href="https://www.google.com/" className="footer-link">Inverse Perpetual</a>
+            <a href="!#" className="footer-link">Inverse Perpetual</a>
           </li>
 
           <li>
-            <a href="https://www.google.com/" className="footer-link">USDT Perpetual</a>
+            <a href="!#" className="footer-link">USDT Perpetual</a>
           </li>
 
           <li>
-            <a href="https://www.google.com/" className="footer-link">Exchange</a>
+            <a href="!#" className="footer-link">Exchange</a>
           </li>
 
           <li>
-            <a href="https://www.google.com/" className="footer-link">Launchpad</a>
+            <a href="!#" className="footer-link">Launchpad</a>
           </li>
 
           <li>
-            <a href="https://www.google.com/" className="footer-link">Binance Pay</a>
+            <a href="!#" className="footer-link">Binance Pay</a>
           </li>
 
         </ul>
@@ -871,27 +871,27 @@ function App() {
           </li>
 
           <li>
-            <a href="https://www.google.com/" className="footer-link">Buy Crypto</a>
+            <a href="!#" className="footer-link">Buy Crypto</a>
           </li>
 
           <li>
-            <a href="https://www.google.com/" className="footer-link">Markets</a>
+            <a href="!#" className="footer-link">Markets</a>
           </li>
 
           <li>
-            <a href="https://www.google.com/" className="footer-link">Tranding Fee</a>
+            <a href="!#" className="footer-link">Tranding Fee</a>
           </li>
 
           <li>
-            <a href="https://www.google.com/" className="footer-link">Affiliate Program</a>
+            <a href="!#" className="footer-link">Affiliate Program</a>
           </li>
 
           <li>
-            <a href="https://www.google.com/" className="footer-link">Referral Program</a>
+            <a href="!#" className="footer-link">Referral Program</a>
           </li>
 
           <li>
-            <a href="https://www.google.com/" className="footer-link">API</a>
+            <a href="!#" className="footer-link">API</a>
           </li>
 
         </ul>
@@ -903,27 +903,27 @@ function App() {
           </li>
 
           <li>
-            <a href="https://www.google.com/" className="footer-link">Bybit Learn</a>
+            <a href="!#" className="footer-link">Bybit Learn</a>
           </li>
 
           <li>
-            <a href="https://www.google.com/" className="footer-link">Help Center</a>
+            <a href="!#" className="footer-link">Help Center</a>
           </li>
 
           <li>
-            <a href="https://www.google.com/" className="footer-link">User Feedback</a>
+            <a href="!#" className="footer-link">User Feedback</a>
           </li>
 
           <li>
-            <a href="https://www.google.com/" className="footer-link">Submit a request</a>
+            <a href="!#" className="footer-link">Submit a request</a>
           </li>
 
           <li>
-            <a href="https://www.google.com/" className="footer-link">API Documentation</a>
+            <a href="!#" className="footer-link">API Documentation</a>
           </li>
 
           <li>
-            <a href="https://www.google.com/" className="footer-link">Trading Rules</a>
+            <a href="!#" className="footer-link">Trading Rules</a>
           </li>
 
         </ul>
@@ -935,23 +935,23 @@ function App() {
           </li>
 
           <li>
-            <a href="https://www.google.com/" className="footer-link">About Bybit</a>
+            <a href="!#" className="footer-link">About Bybit</a>
           </li>
 
           <li>
-            <a href="https://www.google.com/" className="footer-link">Authenticity Check</a>
+            <a href="!#" className="footer-link">Authenticity Check</a>
           </li>
 
           <li>
-            <a href="https://www.google.com/" className="footer-link">Careers</a>
+            <a href="!#" className="footer-link">Careers</a>
           </li>
 
           <li>
-            <a href="https://www.google.com/" className="footer-link">Business Contacts</a>
+            <a href="!#" className="footer-link">Business Contacts</a>
           </li>
 
           <li>
-            <a href="https://www.google.com/" className="footer-link">Blog</a>
+            <a href="!#" className="footer-link">Blog</a>
           </li>
 
         </ul>
@@ -963,31 +963,31 @@ function App() {
       <div className="container">
 
         <p className="copyright">
-          &copy; 2022 Cryptex All Rights Reserved by <a href="https://www.google.com/" className="copyright-link">codewithsadee</a>
+          &copy; 2022 Cryptex All Rights Reserved by <a href="!#" className="copyright-link">codewithsadee</a>
         </p>
 
         <ul className="social-list">
 
           <li>
-            <a href="https://www.google.com/" className="social-link">
+            <a href="!#" className="social-link">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
           </li>
 
           <li>
-            <a href="https://www.google.com/" className="social-link">
+            <a href="!#" className="social-link">
               <ion-icon name="logo-twitter"></ion-icon>
             </a>
           </li>
 
           <li>
-            <a href="https://www.google.com/" className="social-link">
+            <a href="!#" className="social-link">
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
 
           <li>
-            <a href="https://www.google.com/" className="social-link">
+            <a href="!#" className="social-link">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>

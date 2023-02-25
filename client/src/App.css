@@ -150,7 +150,7 @@ html {
 
 body {
 
-  background: linear-gradient(0deg, rgba(0,42,176,1) 52%, rgba(76,125,211,1) 60%, rgba(173,231,255,1) 73%, rgba(187,138,255,1) 87%, rgba(255,128,184,1) 99%);  
+  background: var(--eerie-black-2);  
   color: rgb(255, 255, 255);
   font-size: 1.6rem;
   line-height: 1.4;
@@ -407,7 +407,11 @@ body.active { overflow: hidden; }
   #HERO
 \*-----------------------------------*/
 
-.hero { padding-block: 150px 140px; }
+.hero { 
+  background: linear-gradient(0deg, rgba(173,231,255,1) 24%, rgba(187,138,255,1) 55%, rgba(255,128,184,1) 92%);
+
+  padding-block: 150px 140px; 
+}
 
 .hero-content { margin-block-end: 80px; }
 
@@ -768,7 +772,7 @@ body.active { overflow: hidden; }
   gap: 50px;
 }
 
-.footer .logo { font-size: 3rem; }
+.footer .logo { font-size: 4rem; }
 
 .footer-title {
   color: var(--white);
