@@ -380,6 +380,7 @@ body.active { overflow: hidden; }
   overflow: hidden;
   visibility: hidden;
   transition: 0.25s var(--cubic-out);
+  margin-right: 0px !important;
 }
 
 .navbar.active {
@@ -955,7 +956,7 @@ address.footer-contact-link { max-width: 30ch; }
     content: "";
     width: 160px;
     height: 12px;
-    background-image: url('./images/connect-line.png');
+    background-image: url('./assets/connect-line.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;

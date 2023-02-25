@@ -8,7 +8,7 @@ function App() {
         <div className="container">
 
           <a href="!#" className="logo">
-            <img src="/images/logo.png" width="70" height="70" alt="Crypto logo"/>
+            <img src="/images/logo.png" width="50" height="50" alt="Crypto logo"/>
             GrypTa
           </a>
 
@@ -20,11 +20,14 @@ function App() {
               </li>
 
               <li className="navbar-item">
-                <a href="!#" className="navbar-link" data-nav-link>Buy Crypto</a>
+                <a href="!#" className="navbar-link" data-nav-link>Market</a>
               </li>
 
               <li className="navbar-item">
-                <a href="!#" className="navbar-link" data-nav-link>Markets</a>
+                <a href="!#" className="navbar-link" data-nav-link>Wallet</a>
+              </li>
+              <li className="navbar-item">
+                <a href="!#" className="navbar-link" data-nav-link>Contacts</a>
               </li>
 
             </ul>
@@ -816,18 +819,18 @@ function App() {
         <div className="footer-brand">
 
           <a href="!#" className="logo">
-            <img src="./images/logo.png" width="70" height="70" alt="Cryptex logo"/>
-            Cryptex
+            <img src="./images/logo.png" width="55" height="55" alt="GrypTa logo"/>
+            GrypTa
           </a>
 
           <h2 className="footer-title">Let's talk! 🤙</h2>
 
-          <a href="tel:+123456789101" className="footer-contact-link">+12 345 678 9101</a>
+          <a href="tel:+123456" className="footer-contact-link">+1 (234) 567-8910</a>
 
-          <a href="mailto:hello.cryptex@gmail.com" className="footer-contact-link">hello.cryptex@gmail.com</a>
+          <a href="mailto:ggiangta@gmail.com" className="footer-contact-link">ggiangta@gmail.com</a>
 
           <address className="footer-contact-link">
-            Cecilia Chapman 711-2880 Nulla St. Mankato Mississippi 96522
+            Somewhere Blvd. San Jose 95123
           </address>
 
         </div>
@@ -963,7 +966,7 @@ function App() {
       <div className="container">
 
         <p className="copyright">
-          &copy; 2022 Cryptex All Rights Reserved by <a href="!#" className="copyright-link">codewithsadee</a>
+          &copy; 2022 GrypTa All Rights Reserved by <a href="!#" className="copyright-link">codewithsadee</a>
         </p>
 
         <ul className="social-list">
