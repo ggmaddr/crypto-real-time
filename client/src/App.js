@@ -63,7 +63,7 @@ function App() {
           </div>
 
           <figure className="hero-banner">
-            <img src={require("./images/hero-banner.png")} style={{width: "570", height: "448"}} alt="hero banner" className="w-100"/>
+            <img src="./images/hero-banner.png" style={{width: "570", height: "448"}} alt="hero banner" className="w-100"/>
           </figure>
 
         </div>

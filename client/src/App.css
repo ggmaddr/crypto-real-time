@@ -301,11 +301,11 @@ body.active { overflow: hidden; }
 \*-----------------------------------*/
 
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--eerie-black-1);
+  /* background-color: var(--eerie-black-1); */
   padding-block: 15px;
   z-index: 4;
 }
@@ -422,7 +422,7 @@ body.active { overflow: hidden; }
 }
 .hero-title
 {
-  color: #6000bf;
+  color: #1d003b;
   text-shadow: -5px 10px 10px #f9f7ff;
 }
 
