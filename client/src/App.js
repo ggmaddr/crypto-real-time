@@ -1,5 +1,6 @@
 import './App.css';
-import {PriceCard} from './components/PriceCard.js';
+import PriceCard from './components/PriceCard.js';
+import CoinTable from './components/CoinTable';
 function App() {
   return (
     
@@ -120,10 +121,7 @@ function App() {
 
           <h2 style={{paddingBottom:"1rem"}}>Watchlist</h2>
           <PriceCard />
-     
-
           </div>
-
         </div>
       </section>
 
@@ -139,7 +137,7 @@ function App() {
 
           <div className="market-tab">
 
-            <ul className="tab-nav">
+            {/* <ul className="tab-nav">
 
               <li>
                 <button className="tab-btn active">View All</button>
@@ -169,7 +167,7 @@ function App() {
                 <button className="tab-btn">Music</button>
               </li>
 
-            </ul>
+            </ul> */}
 
             <table className="market-table">
 

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { FiArrowUpRight, FiArrowDown } from 'react-icons/fi'
 
-export const PriceCard = () =>{
+const PriceCard = () =>{
     const [coinData, setCoinData] = useState(null)
     const url = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin%2C%20binancecoin%2C%20staked-ether%2C%20unidex%2C%20ripple%2C%20okb%2C%20neo%2C%20dash&order=market_cap_desc&per_page=8&page=1&sparkline=false&price_change_percentage=24h'
 
@@ -55,3 +55,4 @@ export const PriceCard = () =>{
       
     )
 }
+export default PriceCard;
