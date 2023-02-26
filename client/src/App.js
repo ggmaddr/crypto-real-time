@@ -1,13 +1,13 @@
 import './App.css';
-import {priceCard} from './components/priceCard.js';
+import {PriceCard} from './components/PriceCard.js';
 function App() {
   return (
     
-
     <div className="App">
-      <priceCard/>
+      
       <header className="header" data-header>
         <div className="container">
+
 
           <a href="!#" className="logo">
             <img src="/images/logo.png" width="50" height="50" alt="Crypto logo"/>
@@ -47,9 +47,7 @@ function App() {
         </div>
       </header>
 
-
-
-  <main>
+      <main>
     <article>
 
       <section className="section hero" aria-label={"hero"}>
@@ -58,7 +56,6 @@ function App() {
           <div className="hero-content">
 
             <h1 className="h1 hero-title">Grady's Crypto Wallet</h1>
-
             <p className="hero-text">
               Boss Grady's crypto wallet and his real-time value.
             </p>
@@ -81,7 +78,7 @@ function App() {
 
           <div className="trend-tab">
 
-            <ul className="tab-nav">
+            {/* <ul className="tab-nav">
 
               <li>
                 <button className="tab-btn active">Crypto</button>
@@ -119,99 +116,11 @@ function App() {
                 <button className="tab-btn">Makersplace</button>
               </li>
 
-            </ul>
+            </ul> */}
 
-            <ul className="tab-content">
-
-              <li>
-                <div className="trend-card">
-
-                  <div className="card-title-wrapper">
-                    <img src="./images/coin-1.svg" width="24" height="24" alt="bitcoin logo"/>
-
-                    <a href="!#" className="card-title">
-                      Bitcoin <span className="span">BTC/USD</span>
-                    </a>
-                  </div>
-
-                  <data className="card-value" value="46168.95">USD 46,168.95</data>
-
-                  <div className="card-analytics">
-                    <data className="current-price" value="36641.20">36,641.20</data>
-
-                    <div className="badge red">-0.79%</div>
-                  </div>
-
-                </div>
-              </li>
-
-              <li>
-                <div className="trend-card active">
-
-                  <div className="card-title-wrapper">
-                    <img src="./images/coin-2.svg" width="24" height="24" alt="ethereum logo"/>
-
-                    <a href="!#" className="card-title">
-                      Ethereum <span className="span">ETH/USD</span>
-                    </a>
-                  </div>
-
-                  <data className="card-value" value="3480.04">USD 3,480.04</data>
-
-                  <div className="card-analytics">
-                    <data className="current-price" value="36641.20">36,641.20</data>
-
-                    <div className="badge green">+10.55%</div>
-                  </div>
-
-                </div>
-              </li>
-
-              <li>
-                <div className="trend-card">
-
-                  <div className="card-title-wrapper">
-                    <img src="./images/coin-3.svg" width="24" height="24" alt="tether logo"/>
-
-                    <a href="!#" className="card-title">
-                      Tether <span className="span">USDT/USD</span>
-                    </a>
-                  </div>
-
-                  <data className="card-value" value="1.00">USD 1.00</data>
-
-                  <div className="card-analytics">
-                    <data className="current-price" value="36641.20">36,641.20</data>
-
-                    <div className="badge red">-0.01%</div>
-                  </div>
-
-                </div>
-              </li>
-
-              <li>
-                <div className="trend-card">
-
-                  <div className="card-title-wrapper">
-                    <img src="./images/coin-4.svg" width="24" height="24" alt="bnb logo"/>
-
-                    <a href="!#" className="card-title">
-                      BNB <span className="span">BNB/USD</span>
-                    </a>
-                  </div>
-
-                  <data className="card-value" value="443.56">USD 443.56</data>
-
-                  <div className="card-analytics">
-                    <data className="current-price" value="36641.20">36,641.20</data>
-
-                    <div className="badge red">-1.24%</div>
-                  </div>
-
-                </div>
-              </li>
-
-            </ul>
+          <h2 style={{paddingBottom:"1rem"}}>Watchlist</h2>
+          <PriceCard />
+     
 
           </div>
 
@@ -811,10 +720,10 @@ function App() {
       </section>
 
     </article> 
-  </main>
+      </main>
 
 
-  <footer className="footer">
+      <footer className="footer">
 
     <div className="footer-top">
       <div className="container">
@@ -1003,10 +912,7 @@ function App() {
       </div>
     </div>
 
-  </footer>
-    
-
-
+      </footer>
 
     </div>)}
 export default App;

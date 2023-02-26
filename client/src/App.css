@@ -19,7 +19,7 @@
   /**
    * colors
    */
-  
+  --babyblue: rgb(173 231 255);
   --cadet-blue-crayola: hsl(227, 13%, 73%);
   --maximum-yellow-red: hsl(41, 95%, 61%);
   --medium-sea-green: hsl(142, 43%, 54%);
@@ -45,7 +45,7 @@
    */
 
   --gradient: linear-gradient(90deg, var(--white_10) 0px 77%, var(--white_50) 92%, transparent);
-
+  --graMain: linear-gradient(0deg, rgba(173,231,255,1) 24%, rgba(187,138,255,1) 55%, rgba(255,128,184,1) 92%);
   /**
    * typography
    */
@@ -407,7 +407,7 @@ body.active { overflow: hidden; }
 /* #banner */
 
 .hero { 
-  background: linear-gradient(0deg, rgba(173,231,255,1) 24%, rgba(187,138,255,1) 55%, rgba(255,128,184,1) 92%);
+  background: var(--graMain);
   width: 100%;
   height: 100%;
   padding: 150px 50px;
@@ -434,13 +434,13 @@ body.active { overflow: hidden; }
 \*-----------------------------------*/
 
 .trend {
-  background-color: var(--eerie-black-1);
+  background-color: var(--babyblue);
   padding-block-end: 0;
+  padding: 20px;
 }
 
 .trend-tab {
-  background-color: var(--eerie-black-2);
-  border: 1px solid var(--raisin-black);
+  background: linear-gradient(0deg, rgba(143,8,198,1) 33%, rgba(45,0,138,1) 93%);
   border-radius: var(--radius-24);
   padding: 20px;
   box-shadow: var(--shadow-2);
@@ -464,7 +464,7 @@ body.active { overflow: hidden; }
   transition: var(--transition-1);
 }
 
-.trend-tab .tab-btn.active { background-color: var(--blue-crayola); }
+.trend-tab .tab-btn:is(:hover, .active) { background: var(--blue-crayola); }
 
 .trend-tab .tab-content {
   display: grid;
@@ -473,8 +473,14 @@ body.active { overflow: hidden; }
 
 .trend-card {
   padding: 20px;
+  border: 3px solid var(--babyblue);
   border-radius: var(--radius-12);
   transition: var(--transition-1);
+  background: none;
+  box-shadow: 0 0 10px 2px var(--babyblue);
+}
+.trend-card img {
+  height: 24px;
 }
 
 .trend-card:is(:hover, .active) {
