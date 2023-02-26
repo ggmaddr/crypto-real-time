@@ -42,7 +42,7 @@ function App() {
             <span className="line line-3"></span>
           </button>
 
-          <a href="!#" className="btn btn-outline">Wallet</a>
+          <a href="https://www.linkedin.com/in/gradyta/" className="btn btn-outline">LinkedIn Profile</a>
 
         </div>
       </header>
@@ -50,12 +50,12 @@ function App() {
       <main>
     <article>
 
-      <section className="section hero" aria-label={"hero"}>
+      <section className="section hero" aria-label={"hero"} id="watchlist">
         <div className="container">
 
           <div className="hero-content">
 
-            <h1 className="h1 hero-title">Grady's Crypto Wallet</h1>
+            <h1 className="h1 hero-title">Grady T. <br /> Crypto Wallet</h1>
             <p className="hero-text">
               Boss Grady's crypto wallet and his real-time value.
             </p>
@@ -65,7 +65,7 @@ function App() {
           </div>
 
           <figure className="hero-banner">
-            <img src="./images/banner.png" style={{width: "110%"}} alt="hero banner" className="w-100"/>
+            <img src="./images/banner.png" style={{width: "120%"}} alt="hero banner" className="w-100"/>
           </figure>
 
         </div>
