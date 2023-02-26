@@ -478,14 +478,16 @@ body.active { overflow: hidden; }
   transition: var(--transition-1);
   background: none;
   box-shadow: 0 0 10px 2px var(--babyblue);
+  font-size: 3rem;
 }
 .trend-card img {
   height: 24px;
 }
 
 .trend-card:is(:hover, .active) {
-  background-color: var(--gunmetal_50);
+  background-color: var(--babyblue);
   box-shadow: var(--shadow-3);
+  color: black;
 }
 
 .trend-card .card-title-wrapper {
@@ -495,7 +497,6 @@ body.active { overflow: hidden; }
 }
 
 .trend-card .card-title {
-  color: var(--white);
   font-size: var(--fs-7);
   font-weight: var(--fw-700);
   transition: var(--transition-1);
@@ -503,14 +504,7 @@ body.active { overflow: hidden; }
 
 .trend-card .card-title:is(:hover, :focus) { color: var(--blue-crayola); }
 
-.trend-card .card-title .span {
-  color: var(--cadet-blue-crayola);
-  display: inline-block;
-  margin-inline-start: 5px;
-}
-
 .trend-card .card-value {
-  color: var(--white);
   font-size: var(--fs-3);
   font-weight: var(--fw-700);
   margin-block: 10px;
@@ -522,7 +516,6 @@ body.active { overflow: hidden; }
   gap: 8px;
 }
 
-.trend-card .current-price { font-size: var(--fs-7); }
 
 
 

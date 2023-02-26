@@ -4,7 +4,7 @@ import { FiArrowUpRight, FiArrowDown } from 'react-icons/fi'
 
 export const PriceCard = () =>{
     const [coinData, setCoinData] = useState(null)
-    const url = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=6&page=1&sparkline=false'
+    const url = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=8&page=1&sparkline=false&price_change_percentage=24h'
 
     useEffect(()=>{
         axios.get(url)
@@ -28,9 +28,9 @@ export const PriceCard = () =>{
 
                 <div className="card-title-wrapper">
                     <img src={coin.image} alt='' />
-                    <a href="!#" className='card-title'>{coin.name} 
-                        <span className = 'span'>{coin.symbol.toUpperCase()}/USD</span>
-                    </a>
+    
+                    <a href="!#" className='card-title'>{coin.name} {coin.symbol.toUpperCase()}/USD</a>
+
                 </div>
                 
                 <data className="card-value">${coin.current_price}</data>
@@ -38,13 +38,13 @@ export const PriceCard = () =>{
                 
                 {coin.price_change_percentage_24h < 0 ? (
                     <div className="card-analytics">
-                        <FiArrowDown className="current-price" />
+                        <FiArrowDown/>
                         <div className="badge red">{coin.price_change_percentage_24h.toFixed(2)}%</div>
                         
                     </div>
                 ) : (
                     <div className="card-analytics">
-                        <FiArrowUpRight className="current-price" />
+                        <FiArrowUpRight/>
                         <div className="badge green">{coin.price_change_percentage_24h.toFixed(2)}%</div>
                     </div>
                 )}
