@@ -1,9 +1,11 @@
 import './App.css';
-
+import {priceCard} from './components/priceCard.js';
 function App() {
   return (
+    
 
     <div className="App">
+      <priceCard/>
       <header className="header" data-header>
         <div className="container">
 
@@ -72,6 +74,7 @@ function App() {
         </div>
       </section>
 
+      
 
       <section className="section trend" aria-label="crypto trend">
         <div className="container">
