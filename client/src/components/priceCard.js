@@ -4,7 +4,7 @@ import { FiArrowUpRight, FiArrowDown } from 'react-icons/fi'
 
 const PriceCard = () =>{
     const [coinData, setCoinData] = useState(null)
-    const url = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin%2C%20binancecoin%2C%20staked-ether%2C%20unidex%2C%20ripple%2C%20okb%2C%20neo%2C%20dash&order=market_cap_desc&per_page=8&page=1&sparkline=false&price_change_percentage=24h'
+    const url = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin%2C%20binancecoin%2C%20staked-ether%2C%20unidex%2C%20ripple%2C%20euler%2C%20neo%2C%20dash&order=market_cap_desc&per_page=8&page=1&sparkline=false&price_change_percentage=1h%2C24h%2C7d%2C30d'
 
     useEffect(()=>{
         axios.get(url)
@@ -38,13 +38,13 @@ const PriceCard = () =>{
                 
                 {coin.price_change_percentage_24h < 0 ? (
                     <div className="card-analytics">
-                        <FiArrowDown/>
+                        24h% <FiArrowDown/>
                         <div className="badge red">{coin.price_change_percentage_24h.toFixed(2)}%</div>
                         
                     </div>
                 ) : (
                     <div className="card-analytics">
-                        <FiArrowUpRight/>
+                        24h% <FiArrowUpRight/>
                         <div className="badge green">{coin.price_change_percentage_24h.toFixed(2)}%</div>
                     </div>
                 )}

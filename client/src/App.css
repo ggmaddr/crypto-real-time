@@ -479,7 +479,7 @@ body.active { overflow: hidden; }
   transition: var(--transition-1);
   background: none;
   box-shadow: 0 0 10px 2px var(--babyblue);
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .trend-card img {
   height: 24px;
