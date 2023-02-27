@@ -19,6 +19,7 @@
   /**
    * colors
    */
+  --shineblue: hsl(172, 100%, 86%);
   --babyblue: rgb(173 231 255);
   --cadet-blue-crayola: hsl(227, 13%, 73%);
   --maximum-yellow-red: hsl(41, 95%, 61%);
@@ -266,9 +267,7 @@ body.active { overflow: hidden; }
 
 .badge.green { background-color: var(--medium-sea-green); }
 
-.red { color: var(--presian-red); }
 
-.green { color: var(--medium-sea-green); }
 
 .section-text {
   font-size: var(--fs-5);
@@ -539,7 +538,22 @@ body.active { overflow: hidden; }
   background-color: var(--eerie-black-1);
   color: var(--white);
 }
+.market .summary{
+  display: flex;
+  justify-content: space-between;
+  color: var(--shineblue);
+  padding: 3rem 0 3rem 0;
+}
+.market h2{
+  border: 2px solid var(--shineblue);
+  border-radius: 2rem;
+  box-shadow: 0px -2px 12px 2px #DCFDFF;
+  padding: 1rem 2rem;
+}
 
+.market .red { color: red; }
+
+.market .green { color: greenyellow; }
 .market .title-wrapper {
   display: flex;
   justify-content: space-between;
@@ -588,7 +602,10 @@ body.active { overflow: hidden; }
   padding: 7px 24px;
   border-radius: 50px;
 }
-
+.market-tab .logo{
+  width: 20px;
+  height: 20px;
+}
 .market-tab .tab-btn.active { background-color: var(--blue-crayola); }
 
 .market-table { width: 100%; }

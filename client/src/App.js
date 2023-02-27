@@ -1,6 +1,6 @@
 import './App.css';
 import TrendTab from './components/TrendTab';
-import CoinTable from './components/CoinTable';
+import {CoinTable} from './components/CoinTable';
 function App() {
   return (
     
@@ -84,9 +84,14 @@ function App() {
       <section id="porfolio" className="section market" aria-label="market update">
         <div className="container">
 
-          <div className="title-wrapper">
+          {/* <div className="title-wrapper">
             <h2 className="h2 section-title">Boss Porfolio</h2>
           </div>
+          <div className='summary'>
+            <h2>Market Value: ${Marketvalue}</h2>
+            <h2>Gain($): ${Gain}</h2>
+            <h2>24h change($): ${Change24}</h2>
+          </div> */}
 
           <div className="market-tab">
             <CoinTable/>

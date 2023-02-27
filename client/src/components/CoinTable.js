@@ -1,12 +1,72 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-const CoinTable = () => {
+function combineArrays(array1, array2) {
+    return array1.map((coin) => {
+      const matchingCoin = array2.find((item) => item.id === coin.id);
+      return {
+        ...coin,
+        qty: matchingCoin ? matchingCoin.qty : 0,
+        cost: matchingCoin ? matchingCoin.cost : 0,
+      };
+    });
+  }
+
+
+export const CoinTable = () => {
     const [dataSql, setDataSql] = useState([])
-    // useEffect(()=>{
-    //     axios.get()
-    // },[])
+    const [dataAPI, setDataAPI] = useState([])
+    const urlSql = "http://localhost:3001/db"
+    const urlApi = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=apecoin%2C%20bitcoin%2C%20ethereum%2C%20harvest-finance%2C%20maker%2C%20oraichain-token%2C%20smart-game-finance%2C%20tether&order=id_asc&page=1&sparkline=false"
+    // const [Marketvalue, setMarketvalue] = useState(0);
+    
+    useEffect(()=>{
+        axios.get(urlApi)
+        .then((res)=>{
+            setDataAPI(res.data)
+        })
+        .catch((err) =>{console.log(err)})
+
+        axios.get(urlSql)
+        .then((res)=>{
+            setDataSql(res.data);
+        })
+        .catch((err)=>console.log(err))
+        // console.log(dataAPI);
+        // console.log(dataSql);
+        // console.log("this is merge")
+        
+        
+    }, [])
+    const mergedData = combineArrays(dataAPI,dataSql);
+    let Marketvalue = 0;
+    let Gain = 0;
+    let Change24 = 0;
+    let cost = 0;
+    for (let data of mergedData)
+    {
+        Marketvalue += data.qty*data.current_price;
+        cost += data.qty*data.cost;
+        Change24 += data.qty*data.price_change_24h;
+    }
+     Gain = Marketvalue - cost;
+    console.log(mergedData);
+
+   
+
   return (
+    <div className="container">
+
+          <div className="title-wrapper">
+            <h2 className="h2 section-title">Boss Porfolio</h2>
+          </div>
+          <div className='summary'>
+            <h2>Market Value: ${Marketvalue.toFixed(3)}</h2>
+            <h2 className={Gain > 0? 'green' : 'red'}>Gain($): ${Gain.toFixed(3)}</h2>
+            <h2 className={Change24 > 0? 'green' : 'red'}>24h change($): ${Change24.toFixed(3)}</h2>
+          </div>
+    
     <table className="market-table">
+        
 
     <thead className="table-head">
 
@@ -35,44 +95,39 @@ const CoinTable = () => {
     </thead>
 
     <tbody className="table-body">
-        <tr className="table-row">
+        {mergedData.map((data)=>(
+            <tr className="table-row" key={data.id}>
+                <td className='table-data'>
+                    <div className='wrapper'>
+                        <img src={data.image} alt=""className='logo'/>
+                        <h3>
+                            <a href='!#' className="coin-name">{data.name} <span className="span">{data.symbol.toUpperCase()}</span></a>
+                        </h3>
+                    </div>
+                </td>
+                <td className='table-data'>
+                    {data.qty}
+                </td>
+                {/* market value */}
+                <td className='table-data'>
+                    ${(data.qty*data.current_price).toFixed(2)}
+                </td>
+                {/* cost */}
+                <td className='table-data'>
+                    ${(data.qty*data.cost).toFixed(2)}
+                </td>
+                
+            </tr>
 
-            
-
-            <td className="table-data"> </td>
-            <td className="table-data">
-            <div className="wrapper">
-                <img src="./images/coin-1.svg" width="20" height="20" alt="Bitcoin logo" className="img"/>
-
-                <h3>
-                <a href="!#" className="coin-name">Bitcoin <span className="span">BTC</span></a>
-                </h3>
-            </div>
-            </td>
-
-            <td className="table-data">$56,623.54</td>
-
-            <td className="table-data green">+1.45%</td>
-
-            <td className="table-data">$880,423,640,582</td>
-
-            <td className="table-data">
-            <img src="./images/chart-1.svg" width="100" height="40" alt="profit chart" className="chart"/>
-            </td>
-
-            <td className="table-data">
-            <button className="btn btn-outline">Trade</button>
-            </td>
-
-        </tr>
+        ))}
+       
 
     
     </tbody>
 
 </table>
+</div>
 
-
+// </div>
   )
-}
-
-export default CoinTable
+};
