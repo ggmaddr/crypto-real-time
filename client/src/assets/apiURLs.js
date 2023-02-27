@@ -1,4 +1,4 @@
-export const categories =["Favorite", "DeFi", "AI", "Meme", "Governance", "Eth 2.0 Staking", "Zero Knowledge", "Smart Contract", "Metaverse"]
+export const categories =["Favorite", "DeFi", "AI", "Derivatives", "Governance", "Eth 2.0 Staking", "Zero Knowledge", "Smart Contract", "Metaverse"]
 export const apiURLs = [
     {
         //bitcoin, binancecoin, staked-ether, unidex, ripple, euler, neo, dashh
@@ -21,9 +21,9 @@ export const apiURLs = [
         url:"https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&category=artificial-intelligence&order=market_cap_desc&per_page=8&page=1&sparkline=false"
     },
     {
-        //category_id: augmented-reality
-        name:"AR",
-        url:"https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&category=augmented-reality&order=market_cap_desc&per_page=8&page=1&sparkline=false"
+        //category_id: decentralized-derivatives
+        name:"Derivatives",
+        url:"https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&category=decentralized-derivatives&order=market_cap_ascd&per_page=8&page=1&sparkline=false"
     },
     {
         //  zero-knowledge-zk
@@ -41,8 +41,8 @@ export const apiURLs = [
         url:"https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&category=eth-2-0-staking&order=market_cap_desc&per_page=8&page=1&sparkline=false"
     },
     {
-        // meme-token
-        name:"Meme",
-        url:"https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&category=meme-token&order=gecko_asc&per_page=8&page=1&sparkline=false"
+        // metaverse
+        name:"Metaverse",
+        url:"https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&category=metaverse&order=market_cap_desc&per_page=8&page=1&sparkline=false"
     }
 ]

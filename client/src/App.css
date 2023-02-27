@@ -465,7 +465,14 @@ body.active { overflow: hidden; }
   transition: var(--transition-1);
 }
 
-.trend-tab .tab-btn:is(:hover, .active-btn) { background: var(--blue-crayola); }
+.trend-tab .tab-btn:is(:hover, .active) { background: var(--blue-crayola); }
+
+.trend-tab .span{
+  display: inline;
+  color: rgb(196, 255, 255);
+  text-shadow: 10px 0 20px rgb(161, 252, 255);
+
+}
 
 .trend-tab .tab-content {
   display: grid;
