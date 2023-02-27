@@ -465,7 +465,7 @@ body.active { overflow: hidden; }
   transition: var(--transition-1);
 }
 
-.trend-tab .tab-btn:is(:hover, .active) { background: var(--blue-crayola); }
+.trend-tab .tab-btn:is(:hover, .active-btn) { background: var(--blue-crayola); }
 
 .trend-tab .tab-content {
   display: grid;
@@ -484,8 +484,13 @@ body.active { overflow: hidden; }
 .trend-card img {
   height: 24px;
 }
-
-.trend-card:is(:hover, .active) {
+.trend-card .sym{
+  color: pink;
+}
+.trend-card:hover .sym{
+  color: rgb(207, 0, 169);
+}
+.trend-card:hover{
   background-color: var(--babyblue);
   box-shadow: var(--shadow-3);
   color: black;

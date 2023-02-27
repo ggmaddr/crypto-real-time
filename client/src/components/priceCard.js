@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { FiArrowUpRight, FiArrowDown } from 'react-icons/fi'
-import apiURLs from '../assets/apiURLs'
+import {apiURLs} from '../assets/apiURLs'
 const PriceCard = (props) =>{
     const category = props.category;
     const [coinData, setCoinData] = useState(null)
@@ -42,7 +42,7 @@ const PriceCard = (props) =>{
                 <div className="card-title-wrapper">
                     <img src={coin.image} alt='' />
     
-                    <a href="!#" className='card-title'>{coin.name} {coin.symbol.toUpperCase()}/USD</a>
+                    <a href="!#" className='card-title'>{coin.name} <span className='sym'>{coin.symbol.toUpperCase()}</span></a>
 
                 </div>
                 

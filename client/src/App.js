@@ -78,49 +78,6 @@ function App() {
       <section className="section trend" aria-label="crypto trend">
         <div className="container">
           <TrendTab/>
-
-          {/* <div className="trend-tab">
-
-            <ul className="tab-nav">
-
-              <li>
-                <button className="tab-btn">Crypto</button>
-              </li>
-              <li>
-                <button className="tab-btn">DeFi</button>
-              </li>
-              <li>
-                <button className="tab-btn">BSC</button>
-              </li>
-              <li>
-                <button className="tab-btn">NFT</button>
-              </li>
-
-              <li>
-                <button className="tab-btn">Metaverse</button>
-              </li>
-
-              <li>
-                <button className="tab-btn">Polkadot</button>
-              </li>
-
-              <li>
-                <button className="tab-btn">Solana</button>
-              </li>
-
-              <li>
-                <button className="tab-btn">Opensea</button>
-              </li>
-
-              <li>
-                <button className="tab-btn">Makersplace</button>
-              </li>
-
-            </ul>
-
-          <h2 style={{paddingBottom:"1rem"}}>Watchlist</h2>
-          <PriceCard category="Governance"/>
-          </div> */}
         </div>
       </section>
 
