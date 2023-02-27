@@ -266,9 +266,9 @@ body.active { overflow: hidden; }
 
 .badge.green { background-color: var(--medium-sea-green); }
 
-.last-update.red { color: var(--presian-red); }
+.red { color: var(--presian-red); }
 
-.last-update.green { color: var(--medium-sea-green); }
+.green { color: var(--medium-sea-green); }
 
 .section-text {
   font-size: var(--fs-5);
@@ -453,7 +453,7 @@ body.active { overflow: hidden; }
   flex-wrap: wrap;
   padding-block-end: 20px;
   margin-block-end: 20px;
-  border-block-end: 1px solid var(--raisin-black);
+  border-block-end: 1px solid var(--babyblue);
 }
 
 .trend-tab .tab-btn {
@@ -469,8 +469,10 @@ body.active { overflow: hidden; }
 
 .trend-tab .span{
   display: inline;
-  color: rgb(196, 255, 255);
-  text-shadow: 10px 0 20px rgb(161, 252, 255);
+  color: var(--babyblue);
+  padding: 0 1rem 0 1rem;
+  border: 1px solid var(--babyblue);
+  border-radius: 10%;
 
 }
 
@@ -546,15 +548,6 @@ body.active { overflow: hidden; }
   margin-block-end: 25px;
 }
 
-.market .btn-link {
-  position: relative;
-  min-width: max-content;
-  font-weight: var(--fw-700);
-  transition: var(--transition-1);
-}
-
-.market .btn-link:is(:hover, :focus) { color: var(--blue-crayola); }
-
 .market .btn-link::after {
   content: "";
   position: absolute;
@@ -619,23 +612,6 @@ body.active { overflow: hidden; }
   transition: var(--transition-1);
 }
 
-.market-table .table-body .table-row:is(:hover, :focus-within) {
-  background-color: var(--blue-crayola_10);
-}
-
-.market-table .add-to-fav {
-  color: var(--cadet-blue-crayola);
-  font-size: 18px;
-}
-
-.market-table .add-to-fav.active .icon-outline,
-.market-table .add-to-fav .icon-fill { display: none; }
-
-.market-table .add-to-fav .icon-outline,
-.market-table .add-to-fav.active .icon-fill { display: block; }
-
-.market-table .add-to-fav.active ion-icon { color: var(--maximum-yellow-red); }
-
 .market-table .wrapper {
   display: flex;
   align-items: center;
@@ -658,7 +634,9 @@ body.active { overflow: hidden; }
 
 .market-table .coin-name:is(:hover, :focus) { color: var(--blue-crayola); }
 
-.market-table :is(.rank, .last-price, .market-cap) { font-weight: var(--fw-700); }
+.market-table{ 
+  font-weight: var(--fw-700); 
+}
 
 .market-table .btn-outline {
   border-width: 2px;

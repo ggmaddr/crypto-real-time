@@ -1,6 +1,5 @@
 import './App.css';
 import TrendTab from './components/TrendTab';
-import PriceCard from './components/PriceCard.js';
 import CoinTable from './components/CoinTable';
 function App() {
   return (
@@ -16,22 +15,22 @@ function App() {
             GrypTa
           </a>
 
-          <nav className="navbar" data-navbar>
+          <nav className="navbar">
             <ul className="navbar-list">
 
               <li className="navbar-item">
-                <a href="!#" className="navbar-link active" data-nav-link>Homepage</a>
+                <a href="#home" className="navbar-link" data-nav-link>Homepage</a>
               </li>
 
               <li className="navbar-item">
-                <a href="!#" className="navbar-link" data-nav-link>Market</a>
+                <a href="#watchlist" className="navbar-link" data-nav-link>Watchlist</a>
               </li>
 
               <li className="navbar-item">
-                <a href="!#" className="navbar-link" data-nav-link>Wallet</a>
+                <a href="#porfolio" className="navbar-link" data-nav-link>Porfolio</a>
               </li>
               <li className="navbar-item">
-                <a href="!#" className="navbar-link" data-nav-link>Contacts</a>
+                <a href="#contact" className="navbar-link" data-nav-link>Contacts</a>
               </li>
 
             </ul>
@@ -52,7 +51,7 @@ function App() {
       <main>
     <article>
 
-      <section className="section hero" aria-label={"hero"} id="watchlist">
+      <section className="section hero" aria-label={"hero"} >
         <div className="container">
 
           <div className="hero-content">
@@ -75,57 +74,23 @@ function App() {
 
       
 
-      <section className="section trend" aria-label="crypto trend">
+      <section id="watchlist" className="section trend" aria-label="crypto trend">
         <div className="container">
           <TrendTab/>
         </div>
       </section>
 
 
-      <section className="section market" aria-label="market update">
+      <section id="porfolio" className="section market" aria-label="market update">
         <div className="container">
 
           <div className="title-wrapper">
-            <h2 className="h2 section-title">Market Update</h2>
-
-            <a href="!#" className="btn-link">See All Coins</a>
+            <h2 className="h2 section-title">Boss Porfolio</h2>
           </div>
 
           <div className="market-tab">
-
-            {/* <ul className="tab-nav">
-
-              <li>
-                <button className="tab-btn active">View All</button>
-              </li>
-
-              <li>
-                <button className="tab-btn">Metaverse</button>
-              </li>
-
-              <li>
-                <button className="tab-btn">Entertainment</button>
-              </li>
-
-              <li>
-                <button className="tab-btn">Energy</button>
-              </li>
-
-              <li>
-                <button className="tab-btn">NFT</button>
-              </li>
-
-              <li>
-                <button className="tab-btn">Gaming</button>
-              </li>
-
-              <li>
-                <button className="tab-btn">Music</button>
-              </li>
-
-            </ul> */}
             <CoinTable/>
-            <table className="market-table">
+            {/* <table className="market-table">
 
               <thead className="table-head">
 
@@ -194,7 +159,7 @@ function App() {
 
               </tbody>
 
-            </table>
+            </table> */}
 
           </div>
 
@@ -422,7 +387,7 @@ function App() {
 
       <footer className="footer">
 
-    <div className="footer-top">
+    <div id='contact' className="footer-top">
       <div className="container">
 
         <div className="footer-brand">
@@ -575,7 +540,7 @@ function App() {
       <div className="container">
 
         <p className="copyright">
-          &copy; 2022 GrypTa All Rights Reserved by <a href="!#" className="copyright-link">codewithsadee</a>
+          &copy; 2022 GrypTa All Rights Reserved by <a href="https://www.linkedin.com/in/gradyta/" className="copyright-link">GGMADDR (Grady)</a>
         </p>
 
         <ul className="social-list">
