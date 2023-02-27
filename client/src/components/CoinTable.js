@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 const CoinTable = () => {
+    const [dataSql, setDataSql] = useState([])
+    // useEffect(()=>{
+    //     axios.get()
+    // },[])
   return (
     <table className="market-table">
 
