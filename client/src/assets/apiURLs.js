@@ -1,4 +1,4 @@
-export const categories =["Favorite", "DeFi", "AI", "Derivatives", "Governance", "Eth 2.0 Staking", "Zero Knowledge", "Smart Contract", "Metaverse"]
+export const categories =["Favorite", "DeFi", "AI", "NFT", "Governance", "Eth 2.0 Staking", "Zero Knowledge", "Smart Contract", "Metaverse"]
 export const apiURLs = [
     {
         //bitcoin, binancecoin, staked-ether, unidex, ripple, euler, neo, dashh
@@ -21,9 +21,9 @@ export const apiURLs = [
         url:"https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&category=artificial-intelligence&order=market_cap_desc&per_page=8&page=1&sparkline=false"
     },
     {
-        //category_id: decentralized-derivatives
-        name:"Derivatives",
-        url:"https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&category=decentralized-derivatives&order=market_cap_ascd&per_page=8&page=1&sparkline=false"
+        //category_id: non-fungible-tokens-nft
+        name:"NFT",
+        url:"https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&category=non-fungible-tokens-nft&per_page=8&page=1&sparkline=false"
     },
     {
         //  zero-knowledge-zk

@@ -31,10 +31,6 @@ export const CoinTable = () => {
             setDataSql(res.data);
         })
         .catch((err)=>console.log(err))
-        // console.log(dataAPI);
-        // console.log(dataSql);
-        // console.log("this is merge")
-        
         
     }, [])
     const mergedData = combineArrays(dataAPI,dataSql);
@@ -49,9 +45,6 @@ export const CoinTable = () => {
         Change24 += data.qty*data.price_change_24h;
     }
      Gain = Marketvalue - cost;
-    console.log(mergedData);
-
-   
 
   return (
     <div className="container">
@@ -60,9 +53,9 @@ export const CoinTable = () => {
             <h2 className="h2 section-title">Boss Porfolio</h2>
           </div>
           <div className='summary'>
-            <h2>Market Value: ${Marketvalue.toFixed(3)}</h2>
-            <h2 className={Gain > 0? 'green' : 'red'}>Gain($): ${Gain.toFixed(3)}</h2>
-            <h2 className={Change24 > 0? 'green' : 'red'}>24h change($): ${Change24.toFixed(3)}</h2>
+            <h2>Market Value: ${Marketvalue.toLocaleString("en-US")}</h2>
+            <h2 className={Gain > 0? 'green' : 'red'}>Gain($): ${Gain.toLocaleString("en-US")}</h2>
+            <h2 className={Change24 > 0? 'green' : 'red'}>24h change($): ${Change24.toLocaleString("en-US")}</h2>
           </div>
     
     <table className="market-table">
@@ -84,7 +77,7 @@ export const CoinTable = () => {
 
         <th className="table-heading" scope="col">24h Change $</th>
 
-        <th className="table-heading" scope="col">7d Change $</th>
+        <th className="table-heading" scope="col">All Time High</th>
 
         <th className="table-heading" scope="col">Wallet Address</th>
 
@@ -110,11 +103,27 @@ export const CoinTable = () => {
                 </td>
                 {/* market value */}
                 <td className='table-data'>
-                    ${(data.qty*data.current_price).toFixed(2)}
+                    ${(data.qty*data.current_price).toLocaleString("en-US")}
                 </td>
                 {/* cost */}
                 <td className='table-data'>
-                    ${(data.qty*data.cost).toFixed(2)}
+                    ${(data.qty*data.cost).toLocaleString("en-US")}
+                </td>
+                {/* Gain */}
+                <td className={(data.current_price - data.cost) > 0? 'table-data green' : 'table-data red'}>
+                    ${(data.qty*(data.current_price - data.cost)).toLocaleString("en-US")}
+                </td>
+                {/* 24h change */}
+                <td className={data.price_change_24h > 0? 'table-data green' : 'table-data red'}>
+                    ${(data.qty*data.price_change_24h).toLocaleString("en-US")}
+                </td>
+                {/* ATH */}
+                <td className='table-data green'>
+                    ${(data.qty*data.ath).toLocaleString("en-US")}
+                </td>
+                {/* Wallet */}
+                <td className='table-data'>
+                    <button className='btn btn-outline'>Wallet</button>
                 </td>
                 
             </tr>

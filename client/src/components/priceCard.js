@@ -46,7 +46,7 @@ const PriceCard = (props) =>{
 
                 </div>
                 
-                <data className="card-value">${coin.current_price}</data>
+                <data className="card-value">${coin.current_price.toLocaleString("en-US")}</data>
                 
                 
                 {coin.price_change_percentage_24h < 0 ? (

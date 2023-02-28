@@ -1,6 +1,7 @@
 import './App.css';
 import TrendTab from './components/TrendTab';
 import {CoinTable} from './components/CoinTable';
+import { toggleNav } from './script';
 function App() {
   return (
     
@@ -30,14 +31,20 @@ function App() {
                 <a href="#porfolio" className="navbar-link" data-nav-link>Porfolio</a>
               </li>
               <li className="navbar-item">
+                <a href="#instr" className="navbar-link" data-nav-link>Instruction</a>
+              </li>
+              <li className="navbar-item">
+                <a href="#about" className="navbar-link" data-nav-link>About</a>
+              </li>
+              <li className="navbar-item">
                 <a href="#contact" className="navbar-link" data-nav-link>Contacts</a>
               </li>
 
             </ul>
           </nav>
 
-          {/* <button className="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler> */}
-          <button className="nav-toggle-btn">
+          <button className="nav-toggle-btn" aria-label="Toggle menu" onClick={toggleNav} >
+ 
             <span className="line line-1"></span>
             <span className="line line-2"></span>
             <span className="line line-3"></span>
@@ -51,7 +58,7 @@ function App() {
       <main>
     <article>
 
-      <section className="section hero" aria-label={"hero"} >
+      <section className="section hero" aria-label={"hero"} id="home" >
         <div className="container">
 
           <div className="hero-content">
@@ -84,101 +91,21 @@ function App() {
       <section id="porfolio" className="section market" aria-label="market update">
         <div className="container">
 
-          {/* <div className="title-wrapper">
-            <h2 className="h2 section-title">Boss Porfolio</h2>
-          </div>
-          <div className='summary'>
-            <h2>Market Value: ${Marketvalue}</h2>
-            <h2>Gain($): ${Gain}</h2>
-            <h2>24h change($): ${Change24}</h2>
-          </div> */}
-
           <div className="market-tab">
             <CoinTable/>
-            {/* <table className="market-table">
-
-              <thead className="table-head">
-
-                <tr className="table-row table-title">
-
-                  <th className="table-heading"></th>
-
-                  <th className="table-heading" scope="col">#</th>
-
-                  <th className="table-heading" scope="col">Name</th>
-
-                  <th className="table-heading" scope="col">Last Price</th>
-
-                  <th className="table-heading" scope="col">24h %</th>
-
-                  <th className="table-heading" scope="col">Market Cap</th>
-
-                  <th className="table-heading" scope="col">Last 7 Days</th>
-
-                  <th className="table-heading"></th>
-
-                </tr>
-
-              </thead>
-
-              <tbody className="table-body">
-
-                <tr className="table-row">
-
-                  <td className="table-data">
-                    <button className="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
-                      <ion-icon name="star-outline" aria-hidden="true" className="icon-outline"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true" className="icon-fill"></ion-icon>
-                    </button>
-                  </td>
-
-                  <th className="table-data rank" scope="row">1</th>
-
-                  <td className="table-data">
-                    <div className="wrapper">
-                      <img src="./images/coin-1.svg" width="20" height="20" alt="Bitcoin logo" className="img"/>
-
-                      <h3>
-                        <a href="!#" className="coin-name">Bitcoin <span className="span">BTC</span></a>
-                      </h3>
-                    </div>
-                  </td>
-
-                  <td className="table-data last-price">$56,623.54</td>
-
-                  <td className="table-data last-update green">+1.45%</td>
-
-                  <td className="table-data market-cap">$880,423,640,582</td>
-
-                  <td className="table-data">
-                    <img src="./images/chart-1.svg" width="100" height="40" alt="profit chart" className="chart"/>
-                  </td>
-
-                  <td className="table-data">
-                    <button className="btn btn-outline">Trade</button>
-                  </td>
-
-                </tr>
-
-      
-
-              </tbody>
-
-            </table> */}
-
           </div>
 
         </div>
       </section>
 
 
-      <section className="section instruction" aria-label="instruction">
+      <section className="section instruction" id="instr" aria-label="instruction">
         <div className="container">
 
-          <h2 className="h2 section-title">How It Work</h2>
+          <h2 className="h2 section-title">How This Page Created</h2>
 
           <p className="section-text">
-            Stacks is a production-ready library of stackable content blocks built in React Native.
+          A Fullstack We
           </p>
 
           <ul className="instruction-list">
@@ -191,13 +118,9 @@ function App() {
                     className="img"/>
                 </figure>
 
-                <p className="card-subtitle">Step 1</p>
+                <p className="card-subtitle">Front-end</p>
 
-                <h3 className="h3 card-title">Download</h3>
-
-                <p className="card-text">
-                  Stacks Is A Production-Ready Library Of Stackable Content Blocks Built In React Native.
-                </p>
+                <h3>React.js Framwork</h3>
 
               </div>
             </li>
@@ -210,14 +133,9 @@ function App() {
                     className="img"/>
                 </figure>
 
-                <p className="card-subtitle">Step 2</p>
+                <p className="card-subtitle">Back-end</p>
 
-                <h3 className="h3 card-title">Connect Wallet</h3>
-
-                <p className="card-text">
-                  Stacks Is A Production-Ready Library Of Stackable Content Blocks Built In React Native.
-                </p>
-
+                <h3 className="h3 card-title">Node.js and Express.js</h3>
               </div>
             </li>
 
@@ -229,13 +147,9 @@ function App() {
                     className="img"/>
                 </figure>
 
-                <p className="card-subtitle">Step 3</p>
+                <p className="card-subtitle">Database</p>
 
-                <h3 className="h3 card-title">Start Trading</h3>
-
-                <p className="card-text">
-                  Stacks Is A Production-Ready Library Of Stackable Content Blocks Built In React Native.
-                </p>
+                <h3 className="h3 card-title">SQL (MySQL)</h3>
 
               </div>
             </li>
@@ -248,13 +162,9 @@ function App() {
                     className="img"/>
                 </figure>
 
-                <p className="card-subtitle">Step 4</p>
+                <p className="card-subtitle">APIs</p>
 
-                <h3 className="h3 card-title">Earn Money</h3>
-
-                <p className="card-text">
-                  Stacks Is A Production-Ready Library Of Stackable Content Blocks Built In React Native.
-                </p>
+                <h3 className="h3 card-title">CoinGecko Real-time API</h3>
 
               </div>
             </li>
@@ -265,7 +175,7 @@ function App() {
       </section>
 
 
-      <section className="section about" aria-label="about">
+      <section className="section about" aria-label="about" id = "about">
         <div className="container">
 
           <figure className="about-banner">
@@ -273,14 +183,12 @@ function App() {
               className="w-100"/>
           </figure>
 
-          <div className="about-content">
+          <div className="about-content" >
 
-            <h2 className="h2 section-title">What Is GrypTa</h2>
+            <h2 style={{color: "black"}} className="h2">What Is GrypTa</h2>
 
-            <p className="section-text">
-              Experience a variety of trading on Bitcost. You can use various types of coin transactions such as Spot
-              Trade, Futures
-              Trade, P2P, Staking, Mining, and margin.
+            <p style={{color: "black"}} className="section-text">
+            I started investing in cryptocurrency during the early stages of the pandemic. I was attracted to the decentralized nature of the cryptocurrency ecosystem, the potential of blockchain to disrupt traditional financial systems.
             </p>
 
             <ul className="section-list">
@@ -289,30 +197,13 @@ function App() {
                 <div className="title-wrapper">
                   <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
 
-                  <h3 className="h3 list-title">View real-time cryptocurrency prices</h3>
+                  <h3 className="h3">What coin and how?</h3>
                 </div>
 
                 <p className="item-text">
-                  Experience a variety of trading on Bitcost. You can use various types of coin transactions such as
-                  Spot Trade, Futures
-                  Trade, P2P, Staking, Mining, and margin.
+                Since then, I have built up a diversified portfolio of cryptocurrencies, including Bitcoin, Ethereum, and several altcoins. I have been monitoring the market closely and making informed investment decisions based on my analysis.
                 </p>
               </li>
-
-              <li className="section-item">
-                <div className="title-wrapper">
-                  <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
-
-                  <h3 className="h3 list-title">Buy and sell BTC, ETH, XRP, OKB, Etc...</h3>
-                </div>
-
-                <p className="item-text">
-                  Experience a variety of trading on Bitcost. You can use various types of coin transactions such as
-                  Spot Trade, Futures
-                  Trade, P2P, Staking, Mining, and margin.
-                </p>
-              </li>
-
             </ul>
 
             <a href="!#" className="btn btn-primary">Explore More</a>
@@ -323,15 +214,15 @@ function App() {
       </section>
 
 
-      <section className="section app" aria-label="app">
+      <section className="section app" aria-label="app" >
         <div className="container">
 
           <div className="app-content">
 
-            <h2 className="h2 section-title">Free Your Money & Invest With Confident</h2>
+            <h2 className="h2 section-title">Now available on smartphones</h2>
 
             <p className="section-text">
-              With Cryptor Trade, you can be sure your trading skills are matched
+              I am lying. I haven't launched this website to Google Play or App Store yet, because it has no function to other users =^^=
             </p>
 
             <ul className="section-list">
@@ -340,11 +231,11 @@ function App() {
                 <div className="title-wrapper">
                   <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
 
-                  <h3 className="h3 item-title">Buy, Sell, And Trade On The Go</h3>
+                  <h3 className="h3 item-title">Why this section?</h3>
                 </div>
 
                 <p className="item-text">
-                  Manage Your Holdings From Your Mobile Decive
+                  To make the website looks accomplished
                 </p>
               </li>
 
@@ -352,11 +243,11 @@ function App() {
                 <div className="title-wrapper">
                   <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
 
-                  <h3 className="h3 item-title">Take Control Of Your Wealth</h3>
+                  <h3 className="h3 item-title">Is this section neccessary?</h3>
                 </div>
 
                 <p className="item-text">
-                  Rest Assured You (And Only You) Have Access To Your Funds
+                  No, I do not think any of above section is neccessary for users as well.
                 </p>
               </li>
 
