@@ -2,11 +2,16 @@ import './App.css';
 import TrendTab from './components/TrendTab';
 import {CoinTable} from './components/CoinTable';
 import { toggleNav } from './script';
+import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
+import {fadeOutEnabled} from 'react-reveal/globals';
+
+
 function App() {
+
   return (
     
     <div className="App">
-      
       <header className="header" data-header>
         <div className="container">
 
@@ -54,13 +59,12 @@ function App() {
 
         </div>
       </header>
-
+      
       <main>
     <article>
-
       <section className="section hero" aria-label={"hero"} id="home" >
         <div className="container">
-
+        <Fade top>
           <div className="hero-content">
 
             <h1 className="h1 hero-title">Grady T. <br /> Crypto Wallet</h1>
@@ -75,39 +79,40 @@ function App() {
           <figure className="hero-banner">
             <img src="./images/banner.png"  alt="hero banner" className="w-100"/>
           </figure>
-
+          </Fade>
         </div>
       </section>
-
       
-
       <section id="watchlist" className="section trend" aria-label="crypto trend">
+      <Fade top>
         <div className="container">
           <TrendTab/>
         </div>
+      </Fade>
       </section>
-
-
+     
       <section id="porfolio" className="section market" aria-label="market update">
         <div className="container">
-
+          
           <div className="market-tab">
+          <Fade top fadeOutEnabled> 
             <CoinTable/>
+            </Fade>
           </div>
-
+          
         </div>
       </section>
 
-
       <section className="section instruction" id="instr" aria-label="instruction">
         <div className="container">
-
+          <Fade top>
           <h2 className="h2 section-title">How This Page Created</h2>
-
+          
           <p className="section-text">
-          A Fullstack We
+          I built this Full-stack Website using the technology below.
           </p>
-
+          </Fade>
+          <Fade top>
           <ul className="instruction-list">
 
             <li>
@@ -170,6 +175,7 @@ function App() {
             </li>
 
           </ul>
+          </Fade>
 
         </div>
       </section>
@@ -177,7 +183,7 @@ function App() {
 
       <section className="section about" aria-label="about" id = "about">
         <div className="container">
-
+        <Fade top>
           <figure className="about-banner">
             <img src="./images/about-banner.png" width="748" height="436" loading="lazy" alt="about banner"
               className="w-100"/>
@@ -190,26 +196,20 @@ function App() {
             <p style={{color: "black"}} className="section-text">
             I started investing in cryptocurrency during the early stages of the pandemic. I was attracted to the decentralized nature of the cryptocurrency ecosystem, the potential of blockchain to disrupt traditional financial systems.
             </p>
+            
 
-            <ul className="section-list">
 
-              <li className="section-item">
-                <div className="title-wrapper">
-                  <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
-
-                  <h3 className="h3">What coin and how?</h3>
-                </div>
+                <h3 className="h3">What coin and how?</h3>
 
                 <p className="item-text">
                 Since then, I have built up a diversified portfolio of cryptocurrencies, including Bitcoin, Ethereum, and several altcoins. I have been monitoring the market closely and making informed investment decisions based on my analysis.
                 </p>
-              </li>
-            </ul>
+              
 
             <a href="!#" className="btn btn-primary">Explore More</a>
 
           </div>
-
+        </Fade>
         </div>
       </section>
 
@@ -218,7 +218,7 @@ function App() {
         <div className="container">
 
           <div className="app-content">
-
+          <Fade top>
             <h2 className="h2 section-title">Now available on smartphones</h2>
 
             <p className="section-text">
@@ -252,7 +252,7 @@ function App() {
               </li>
 
             </ul>
-
+            </Fade>
             <div className="app-wrapper">
               <a href="!#">
                 <img src="./images/googleplay.png" width="135" height="40" loading="lazy"
@@ -266,21 +266,21 @@ function App() {
             </div>
 
           </div>
-
+          <Fade top>
           <div className="app-banner">
             <img src="./images/app-banner.png" loading="lazy" alt="app banner"
               className="w-100"/>
 
             <span className="span">Scan To Download</span>
           </div>
-
+          </Fade>
         </div>
       </section>
 
     </article> 
       </main>
-
-
+      
+      <Fade top>
       <footer className="footer">
 
     <div id='contact' className="footer-top">
@@ -471,6 +471,6 @@ function App() {
     </div>
 
       </footer>
-
+    </Fade>
     </div>)}
 export default App;

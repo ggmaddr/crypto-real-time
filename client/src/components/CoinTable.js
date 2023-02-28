@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import { fadeOutEnabled } from 'react-reveal/globals';
 function combineArrays(array1, array2) {
     return array1.map((coin) => {
       const matchingCoin = array2.find((item) => item.id === coin.id);

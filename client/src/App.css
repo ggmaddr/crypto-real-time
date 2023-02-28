@@ -308,7 +308,7 @@ body.active { overflow: hidden; }
   top: 0;
   left: 0;
   width: 100%;
-  /* background-color: var(--eerie-black-1); */
+  background-color: ;
   padding-block: 15px;
   z-index: 4;
 }
@@ -543,6 +543,7 @@ body.active { overflow: hidden; }
 .market {
   background-color: var(--eerie-black-1);
   color: var(--white);
+  padding: 10px;
 }
 .market .summary{
   display: flex;
