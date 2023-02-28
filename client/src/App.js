@@ -73,7 +73,7 @@ function App() {
           </div>
 
           <figure className="hero-banner">
-            <img src="./images/banner.png" style={{width: "120%"}} alt="hero banner" className="w-100"/>
+            <img src="./images/banner.png"  alt="hero banner" className="w-100"/>
           </figure>
 
         </div>
@@ -268,7 +268,7 @@ function App() {
           </div>
 
           <div className="app-banner">
-            <img src="./images/app-banner.png" width="618" height="526" loading="lazy" alt="app banner"
+            <img src="./images/app-banner.png" loading="lazy" alt="app banner"
               className="w-100"/>
 
             <span className="span">Scan To Download</span>

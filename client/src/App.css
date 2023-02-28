@@ -178,7 +178,11 @@ body.active { overflow: hidden; }
   #REUSED STYLE
 \*-----------------------------------*/
 
-.container { padding-inline: 15px; }
+.container { 
+  padding-inline: 15px; 
+  margin: 0px;
+}
+
 
 .btn {
   color: var(--white);
@@ -425,7 +429,9 @@ body.active { overflow: hidden; }
   color: #1d003b;
   text-shadow: -5px 10px 10px #f9f7ff;
 }
-
+.hero-banner img{
+  width: 120%;
+}
 
 
 
@@ -756,6 +762,10 @@ body.active { overflow: hidden; }
   position: relative;
   margin-block-start: 60px;
 }
+.app-banner img{
+  position: relative;
+  right: -50%;
+}
 
 .app-banner .span {
   position: absolute;
@@ -820,7 +830,6 @@ address.footer-contact-link { max-width: 30ch; }
 
 .footer-bottom {
   background-color: var(--eerie-black-2);
-  padding-block: 20px;
 }
 
 .copyright {
@@ -882,7 +891,7 @@ address.footer-contact-link { max-width: 30ch; }
    */
 
   .container {
-    max-width: 540px;
+    max-width: auto;
     width: 100%;
     margin-inline: auto;
   }
@@ -894,6 +903,15 @@ address.footer-contact-link { max-width: 30ch; }
    */
 
   .hero-text { --fs-5: 2rem; }
+
+  .app-banner img{
+    right: 0%;
+  }
+  
+  .app-banner .span {
+    top: -10%;
+
+  }
 
 }
 
@@ -941,7 +959,9 @@ address.footer-contact-link { max-width: 30ch; }
     margin-inline: auto;
   }
 
-
+  .hero-banner img{
+    width: 100%;
+  }
 
   /**
    * TREND
@@ -1078,7 +1098,9 @@ address.footer-contact-link { max-width: 30ch; }
   }
 
   .hero-content { margin-block-end: 0; }
-
+  .hero-banner img{
+    width: 110%;
+  }
 
 
   /**
@@ -1101,7 +1123,9 @@ address.footer-contact-link { max-width: 30ch; }
   }
 
   .about-banner { margin-block-end: 0; }
-
+.app-banner img{
+    right: 0%;
+  }
 
 
   /**
@@ -1118,7 +1142,9 @@ address.footer-contact-link { max-width: 30ch; }
   }
 
   .app-banner { margin-block-start: 0; }
-
+  .app-banner img{
+    right: -20%;
+  }
   .app-content { margin-block: 50px; }
 
 }
@@ -1173,6 +1199,9 @@ address.footer-contact-link { max-width: 30ch; }
    */
 
   .hero .container { gap: 100px; }
+  .hero-banner img{
+    width: 110%;
+  }
 
 
 
@@ -1213,6 +1242,9 @@ address.footer-contact-link { max-width: 30ch; }
    */
 
   .app-content { margin-block: 100px; }
+  .app-banner img{
+    right: -30%;
+  }
 
 
 
@@ -1227,3 +1259,9 @@ address.footer-contact-link { max-width: 30ch; }
   .footer-brand { grid-column: auto; }
 
 }
+@media (min-width: 1450px) {
+  .hero-banner img{
+    width: 120%;
+  }
+}
+
