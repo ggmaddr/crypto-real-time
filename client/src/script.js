@@ -16,17 +16,3 @@ export const toggleNav = ()=>{
 
 
 
-
-
-// /**
-// * toggle active on add to fav
-// */
-
-// const addToFavBtns = document.querySelectorAll("[data-add-to-fav]");
-
-// const toggleActive = function () {
-// this.classList.toggle("active");
-// }
-
-
-
