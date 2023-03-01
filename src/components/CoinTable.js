@@ -61,7 +61,6 @@ export const CoinTable = () => {
     
     <table className="market-table">
         
-
     <thead className="table-head">
 
       <tr className="table-row table-title">
