@@ -15,7 +15,7 @@ function App() {
       <header className="header" data-header>
         <div className="container">
           <a href="!#" className="logo">
-            <img src="/images/logo.png" width="50" height="50" alt="Crypto logo"/>
+            <img src="./images/logo.png" width="50" height="50" alt="Crypto logo"/>
             GrypTa
           </a>
 
