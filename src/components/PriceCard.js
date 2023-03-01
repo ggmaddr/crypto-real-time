@@ -53,7 +53,6 @@ const PriceCard = (props) =>{
                     <div className="card-analytics">
                         24h% <FiArrowDown/>
                         <div className="badge red">{coin.price_change_percentage_24h.toFixed(2)}%</div>
-                        
                     </div>
                 ) : (
                     <div className="card-analytics">
