@@ -125,7 +125,7 @@ function App() {
 
                 <p className="card-subtitle">Front-end</p>
 
-                <h3>React.js Framwork</h3>
+                <h3>React.js Framework</h3>
 
               </div>
             </li>
@@ -280,7 +280,7 @@ function App() {
     </article> 
       </main>
       
-      <Fade top>
+      
       <footer className="footer">
 
     <div id='contact' className="footer-top">
@@ -471,6 +471,5 @@ function App() {
     </div>
 
       </footer>
-    </Fade>
     </div>)}
 export default App;

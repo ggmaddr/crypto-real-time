@@ -10,8 +10,6 @@ export const toggleNav = ()=>{
     navbar.classList.toggle("active");
     navToggler.classList.toggle("active");
     document.body.classList.toggle("active");
-
-
 }
 
 
