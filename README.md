@@ -1,6 +1,6 @@
 # Crypto-real-time
 
-
+Deployment: https://ggmaddr.github.io/crypto-real-time/
 In the root directory, you can run:
 
 ### `npm start`
